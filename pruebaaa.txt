@@ -1,0 +1,11 @@
+select top 1 Categoria.Nombre
+ from Categoria 
+ inner join Producto 
+ on Categoria.CodigoCategoria=Producto.CodigoCategoria
+   inner join Venta 
+   on Producto.CodigoProducto=Venta.CodigoProducto order by Fecha Desc;
+
+
+
+
+Realizar una pagina web que muestre el listado de los nombres de productos vendidos, esta pagina web tendra un filtro por categiria este de productos vendidos, esta pagin
